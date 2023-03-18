@@ -1,0 +1,114 @@
+.dropDownBox {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+}
+
+.dropDownBox-nav-links {
+  width: 100%;
+  padding: 0;
+}
+
+.dropDownBox-nav-links li {
+  position: relative;
+  list-style: none;
+  transition: all 0.4s ease;
+
+  color: black !important;
+
+}
+
+
+.dropDownBox .dropDownBox-nav-links li .iocn-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.dropDownBox.close .dropDownBox-nav-links li .iocn-link {
+  display: block
+}
+
+.dropDownBox .dropDownBox-nav-links li i {
+  height: 50px;
+  min-width: 78px;
+  text-align: center;
+  line-height: 50px;
+  color: #000000;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+
+}
+
+.dropDownBox .dropDownBox-nav-links li.showMenu i.arrow {
+  transform: rotate(-180deg);
+}
+
+.dropDownBox.close .dropDownBox-nav-links i.arrow {
+  display: none;
+
+}
+
+.dropDownBox .dropDownBox-nav-links li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+
+}
+
+.dropDownBox .dropDownBox-nav-links li a .link_name {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  transition: all 0.4s ease;
+
+}
+
+.dropDownBox.close .dropDownBox-nav-links li a .link_name {
+  opacity: 0;
+  pointer-events: none;
+
+}
+
+.dropDownBox .dropDownBox-nav-links li .sub-menu {
+  /* padding: 6px 6px 14px 0px; */
+  margin-top: -10px;
+  display: none;
+  transition: all 0.4s ease;
+
+}
+
+.dropDownBox .dropDownBox-nav-links li.showMenu .sub-menu {
+  display: block;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.dropDownBox .dropDownBox-nav-links li .sub-menu a {
+  color: #070707;
+  font-size: 15px;
+  padding: 5px 10px 5px 5px;
+  white-space: nowrap;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+  display: block;
+
+}
+
+.dropDownBox .dropDownBox-nav-links li .sub-menu a:hover {
+  opacity: 1;
+  background-color: rgba(128, 128, 128, 0.082);
+
+}
+
+.dropDownBox .sub-menu li {
+  width: 100%;
+  text-align: right;
+
+}
